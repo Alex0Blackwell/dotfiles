@@ -190,6 +190,8 @@ bar {
 	}
 }
 
+bindsym $mod+shift+p border pixel 10
+bindsym $mod+p border normal
 
 bindsym $mod+shift+x exec i3lock --color "#262626"
 
@@ -227,8 +229,3 @@ bindsym $mod+Next exec i3-msg exit
 
 #Assign workspaces to screens
 workspace "3: FireFox " output HDMI-0
-
-#this is an attempt to use only one browser
-#bindsym $mod+p exec xdg-open https://calendar.google.com/calendar/r?pli=1#main_7%7Cday; move container to workspace $workspace1;exec firefox; move container to workspace $workspace3
-#exec firefox; move container to workspace $workspace3
-#exec firefox; move container to workspace $workspace3; $workspace2
