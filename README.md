@@ -8,7 +8,7 @@
 * [Setup](#setup)
 
 ## Overview
-This is my config for i3wm, the tiling window manager I have running on Ubuntu.  
+This is my config for i3wm and i3blocks, the tiling window manager and status bar I have running on Ubuntu.  
 **Note**
   - `$mod` key is `Mod1` *(Alt on most keyboards)*
     - change this to `Mod4` for Windows key on most keyboards
@@ -23,16 +23,18 @@ This is my config for i3wm, the tiling window manager I have running on Ubuntu.
 ![Screenshot](pictures/Screenshot.png "Colourful!")
 
 ## Requirements
-The *config* file references the following programs:
+The [config](config) file references the following programs:
   - [i3blocks](https://github.com/vivien/i3blocks)
     - *a feed generator for status bars*
       - required for the status bar
-      - `i3blocks.conf` is the associated config file
+      - [i3blocks.conf](i3blocks.conf) is the associated config file
   - [Compton](https://github.com/chjj/compton)
     - *a compositor for X11*
       - required for blur effect on windows
-      - *bonus* works well at fixing screen tearing issues
-The following programs are referenced in the *config* file as a shortcut
+      - *bonus* works well at fixing screen tearing issues  
+
+The following programs are referenced in the [config](config) file as a shortcut
+
   - [Ranger](https://github.com/ranger/ranger)
     - file manager for the console
   - amixer
