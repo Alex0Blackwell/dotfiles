@@ -8,7 +8,8 @@
 * [Setup](#setup)
 
 ## Overview
-This is my config for i3wm and i3blocks, the tiling window manager and status bar I have running on Ubuntu.  
+This is my config for i3wm, i3blocks, and compton: the tiling window manager, status bar, and compositor I have running on Ubuntu.  
+Picom is a fork of compton and the compton configuration file is called `picom.conf`.  
 **Note**
   - `$mod` key is `Mod1` *(Alt on most keyboards)*
     - change this to `Mod4` for Windows key on most keyboards
@@ -83,8 +84,10 @@ The following programs are referenced in the [config](config) file as a shortcut
     git clone https://github.com/Alex0Blackwell/i3wm.git
     cd i3wm/
     mv i3blocks.conf config ~/.i3/config
+    mv picom.conf ~/.config
 
-alternatively, the config files can be moved to `/etc/i3/` or `~/.config/i3/config`  
+alternatively, the *i3wm* and *i3blocks* config files can be moved to `/etc/i3/` or `~/.config/i3/config`  
+The *picom* config file could also be moved to `~/.config/picom/picom.conf` or `~/.config/picom.conf` or `~/.picom.conf`.
 
 install dependencies
 
