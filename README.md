@@ -1,4 +1,4 @@
-# i3wm Config
+# Dotfiles
 
 ## Table of contents
 * [Overview](#overview)
@@ -8,8 +8,7 @@
 * [Setup](#setup)
 
 ## Overview
-This is my config for i3wm, i3blocks, and compton: the tiling window manager, status bar, and compositor I have running on Ubuntu.  
-Picom is a fork of compton and the compton configuration file is called `picom.conf`.  
+This is my config for i3wm, the tiling window manager I have running on Ubuntu. Some of the config files, however, may be used on GNU/Linux systems that don't have i3wm, such as the compton config and the rofi config.
 **Note**
   - `$mod` key is `Mod1` *(Alt on most keyboards)*
     - change this to `Mod4` for Windows key on most keyboards
@@ -21,21 +20,26 @@ Picom is a fork of compton and the compton configuration file is called `picom.c
 
 > Screenshot of window manager on dual screen setup
 
-![Screenshot](pictures/Screenshot.png "Colourful!")
+![Screenshot](.images/Screenshot.png "Colourful!")
+
+> launching FireFox in rofi
+
+![Screenshot](.images/rofi.png "Launching time!")
 
 ## Requirements
-The [config](config) file references the following programs:
+The *config* file references the following programs:
   - [i3blocks](https://github.com/vivien/i3blocks)
     - *a feed generator for status bars*
       - required for the status bar
-      - [i3blocks.conf](i3blocks.conf) is the associated config file
+      - `i3blocks.conf` is the associated config file
   - [Compton](https://github.com/chjj/compton)
     - *a compositor for X11*
       - required for blur effect on windows
-      - *bonus* works well at fixing screen tearing issues  
-
-The following programs are referenced in the [config](config) file as a shortcut
-
+      - *bonus* works well at fixing screen tearing issues
+  - [Rofi](https://github.com/davatorium/rofi)
+    - *a window switcher, application launcher and dmenu replacement*
+      - required for launching applications
+The following programs are referenced in the *config* file as a shortcut
   - [Ranger](https://github.com/ranger/ranger)
     - file manager for the console
   - amixer
@@ -82,14 +86,13 @@ The following programs are referenced in the [config](config) file as a shortcut
 **Backup your existing i3 config :)**
 
     git clone https://github.com/Alex0Blackwell/i3wm.git
-    cd i3wm/
-    mv i3blocks.conf config ~/.i3/config
-    mv picom.conf ~/.config
+    cd dotfiles/
+    mv .config/* ~/.config
 
-alternatively, the *i3wm* and *i3blocks* config files can be moved to `/etc/i3/` or `~/.config/i3/config`  
-The *picom* config file could also be moved to `~/.config/picom/picom.conf` or `~/.config/picom.conf` or `~/.picom.conf`.
+Install [dependencies](#requirements)
 
-install dependencies
+**Credits**
+  - The rofi config is based on the one done (here)[https://github.com/mustaqimM/dotfiles/tree/master/.config/rofi] by (Mustaqim Malim)[https://github.com/mustaqimM].
 
 ## License
 Licensed under the [MIT](LICENSE) license.
