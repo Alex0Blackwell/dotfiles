@@ -24,7 +24,7 @@ This is my config for i3wm, the tiling window manager I have running on Ubuntu. 
 
 > launching FireFox in rofi
 
-![Screenshot](.images/rofi.png "Launching time!")
+![Screenshot](.images/rofi.gif "Launching time!")
 
 ## Requirements
 The *config* file references the following programs:
@@ -92,7 +92,7 @@ The following programs are referenced in the *config* file as a shortcut
 Install [dependencies](#requirements)
 
 **Credits**
-  - The rofi config is based on the one done (here)[https://github.com/mustaqimM/dotfiles/tree/master/.config/rofi] by (Mustaqim Malim)[https://github.com/mustaqimM].
+  - The rofi config is based on the one done [here](https://github.com/mustaqimM/dotfiles/tree/master/.config/rofi) by [Mustaqim Malim](https://github.com/mustaqimM).
 
 ## License
 Licensed under the [MIT](LICENSE) license.
