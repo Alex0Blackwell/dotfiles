@@ -25,7 +25,7 @@ This is my config for i3wm, the tiling window manager I have running on Ubuntu. 
 
 > launching FireFox in rofi
 
-![Screenshot](.images/rofi.png "Launching time!")
+![Screenshot](.images/rofi.gif "Launching time!")
 
 > Screenshot of terminal in the *~/documents/programming* folder
 
