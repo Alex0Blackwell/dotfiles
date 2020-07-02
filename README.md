@@ -3,6 +3,7 @@
 ## Table of contents
 * [Overview](#overview)
 * [Examples](#examples)
+* [Configs](#configs)
 * [Requirements](#requirements)
 * [Key Bindings](#key-bindings)
 * [Setup](#setup)
@@ -25,6 +26,26 @@ This is my config for i3wm, the tiling window manager I have running on Ubuntu. 
 > launching FireFox in rofi
 
 ![Screenshot](.images/rofi.png "Launching time!")
+
+> Screenshot of terminal in the *~/documents/programming* folder
+
+![Screenshot](.images/terminal.png "Fancy!")
+
+## Configs
+
+### i3wm
+  - Files for styling and key bindings
+  - i3blocks config file
+### Picom
+  - Composition manager config file
+    - For screen tearing, window compositing, and blur/transparency effects
+### Rofi
+  - Mojave theme
+### Vim
+  - Vim bundled with Vundle and YouCompleteMe autocomplete
+### Bash
+  - Styled and key bindings
+    - "c" command cd's into a directory and runs ls
 
 ## Requirements
 The *config* file references the following programs:
@@ -84,15 +105,17 @@ The following programs are referenced in the *config* file as a shortcut
 ## Setup
 
 **Backup your existing i3 config :)**
+Move the *.config/* contents into the *~/.config* folder.  
+Move *.vim/* folder, *.vimrc*, and *.bashrc* into the home directory.
+
 
     git clone https://github.com/Alex0Blackwell/i3wm.git
     cd dotfiles/
     mv .config/* ~/.config
+    mv .vim/ .vimrc .bashrc ~/
 
 Install [dependencies](#requirements)
 
-**Credits**
-  - The rofi config is based on the one done (here)[https://github.com/mustaqimM/dotfiles/tree/master/.config/rofi] by (Mustaqim Malim)[https://github.com/mustaqimM].
 
 ## License
-Licensed under the [MIT](LICENSE) license.
+Licensed under the [GNU General Public License v3.0](LICENSE).
